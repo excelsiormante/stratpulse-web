@@ -1,0 +1,83 @@
+doctype html
+html(lang="en")
+	include ./partials/head.pug
+	body.signup-page
+		nav.navbar.navbar-transparent.navbar-absolute
+			div.container
+				//Brand and toggle get grouped for better mobile display
+				div.navbar-header
+					button(type="button",data-toggle="collapse",data-target="#navigation-example",class="navbar-toggle")
+						span.sr-only Toggle
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+	   
+					a.navbar-brand(href="http://www.creative-tim.com") Stratpulse
+
+				div.collapse.navbar-collapse#navigation-example
+					ul.nav.navbar-nav.navbar-right
+						
+						li
+							a(href="https://twitter.com/CreativeTim",target="_blank",class="btn btn-simple btn-white btn-just-icon")
+								i.fa.fa-twitter
+							
+					  
+						li
+							a(href="https://www.facebook.com/CreativeTim",target="_blank",class="btn btn-simple btn-white btn-just-icon")
+								i.fa.fa-facebook-square
+							
+						
+						li
+							a(href="https://www.instagram.com/CreativeTimOfficial",target="_blank",class="btn btn-simple btn-white btn-just-icon")
+								i.fa.fa-instagram
+
+		div.wrapper
+			div.header.header-filter(style="background-image: url('/img/city.jpg'); background-size: cover; background-position: top center;")
+				div.container
+					div.row
+						div.col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3
+							div.card.card-signup
+								form.form(method="post" action="sign_up")
+									div.header.header-primary.text-center
+										h4 Sign Up
+										div.social-line
+											a(href="#pablo",class="btn btn-simple btn-just-icon")
+												i(class="fa fa-facebook-square")
+											a(href="#pablo",class="btn btn-simple btn-just-icon")
+												i(class="fa fa-twitter")
+											a(href="#pablo",class="btn btn-simple btn-just-icon")
+												i(class="fa fa-google-plus")
+									p.text-divider Or Be Classical
+
+									div.content
+										div.input-group
+											span.input-group-addon
+												i.material-icons face
+
+											input(type="text",class="form-control",placeholder="First Name...",name="firstName")
+
+										div.input-group
+											span.input-group-addon
+												i.material-icons face
+
+											input(type="text",class="form-control",placeholder="Last Name...",name="lastName")
+
+										div.input-group
+											span.input-group-addon
+												i.material-icons email
+											input(type="text",class="form-control",placeholder="Email...",name="email")
+										
+										div.input-group
+											span.input-group-addon
+												i.material-icons lock_outline
+											input(type="password",placeholder="Password...",class="form-control",name="password")
+
+									div.footer.text-center
+										button(class="btn btn-simple btn-primary btn-lg",type="submit") Get Started
+									
+				footer.footer
+					div.container
+						nav.pull-left
+							ul
+								li
+									a(href="http://presentation.creative-tim.com") About Us

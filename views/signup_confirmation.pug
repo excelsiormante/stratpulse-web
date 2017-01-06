@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+	include ./partials/head.pug
+	body
+		include ./partials/header.pug
+		div.container-fluid
+			div.row
+				div.col-md-6.col-md-offset-3
+					h2#accept_msg= "Do you agree to sign up with your google account with Stratpulse lorem ipsum dolor sit amet"
+			div.row.google_signup_confirmation
+				div.col-md-6.col-md-offset-3
+					div.row
+						div.col-md-2.col-md-offset-4
+							div#google_image
+								span= "SP"
+						div.col-md-6
+							div.sign_up_link_container
+								div#signup_image
+								div#signup_name
+									span#google_name= "Jonalyn Palma"
+									br
+									span= "j.palma@stratpoint.com"
+			div.row
+				div.col-md-4.col-md-offset-4
+					form
+						div.form-group
+							input(type= "submit", name= "g-accept_btn", value= "Accept", class= "form-control submit_btn")
+			
+
+
+	

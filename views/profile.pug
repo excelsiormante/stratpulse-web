@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+	include ./partials/head.pug
+	body.profile-page
+		include ./partials/logged_in_header.pug
+		
+		div.wrapper
+			div.header.header-filter(style="background-image: url('../assets/img/examples/city.jpg');")
+
+			div.main.main-raised
+				div.profile-content
+		            div.container
+		                div.row
+		                    div.profile
+		                        div.avatar
+		                            img(src="../assets/img/christian.jpg",alt="Circle Image",class="img-circle img-responsive img-raised")
+		                        div.name
+		                            h3.title Josh Mante
+									h6 Web Developer
+
+		                div.description.text-center
+	                        p Web developer capable of lorem ipsum.
+		                </div>
+
+
+		            </div>
+		        </div>
+			</div>
+
+	    </div>
+	    
+	    include ./partials/footer.pug
+
+
+	    
